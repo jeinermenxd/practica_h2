@@ -43,7 +43,7 @@ $('#btnLogin').click(function () {
                         usuarioEncontrado = true;
                         console.log("Usuario encontrado:", usuario.user);
                         console.log("Rol:", usuario.rol);
-                        window.location.href = "https://jeinermenxd.github.io/practicax_h1/src/components/admin.html"
+                        window.location.href = "https://jeinermenxd.github.io/practica_h2/src/components/admin.html"
                         // Si el inicio de sesión es exitoso, muestra una alerta
                         Swal.fire({
                             icon: 'success',
