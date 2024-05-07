@@ -26,7 +26,14 @@ coleccionProductos.on("value", snapshot => {
       <tr>
         <td class="text-center px-4 py-2">${producto.codigo}</td>
         <td class="text-center px-4 py-2">${producto.Nombre}</td>
-        <td class="text-center px-4 py-2">${producto.imge}</td>
+        <td class="text-center px-4 py-2">
+    <div class="flex justify-center items-center">
+        <img class="w-10 h-10 rounded-full"
+            src="${producto.imge}"
+            alt="">
+    </div>
+</td>
+
         <td class="text-center px-4 py-2">${producto.Descripcion}</td>
         <td class=" text-center px-4 py-2">
                             <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" onclick="abrirModalEditar('${childSnapshot.key}')">Editar</button>
